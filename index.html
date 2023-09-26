@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/1da3ce634e.js"></script>
-    <script src="script/script.js"></script>
+    
 </head>
 <body>
 
     <h1>CALCULADORA</h1>
     <div class="parent">
         <div class="div1"> 
-            <input type="text">
+            <input type="number" id="num1" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
         </div>
         <div class="div2"> 
-            <input type="text">
+            <input type="number"  id="num2" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
         </div>        
         <div class="div3"> 
-            <i class="fa-solid fa-plus"></i>
+            <button class="fa-solid fa-plus suma" onclick="suma()"></button>
         </div>
         <div class="div4"> 
-            <i class="fa-solid fa-minus"></i>
+            <button class="fa-solid fa-minus" onclick="resta()"></button>
         </div>
         <div class="div5"> 
-            <i class="fa-solid fa-divide"></i>
+            <button class="fa-solid fa-divide" onclick="division()"></button>
         </div>
         <div class="div6">
-            <i class="fa-solid fa-xmark"></i>     
+            <button class="fa-solid fa-xmark" onclick="multiplicacion()"></button>     
         </div>
         <div class="div7"> 
-            <i class="fa-solid fa-superscript"></i>
+            <button class="fa-solid fa-superscript" onclick="potencia()"></button>
         </div>
         <div class="div8"> 
-            <i class="fa-solid fa-square-root-variable"></i>
+            <button class="fa-solid fa-square-root-variable" onclick="raiz()"></button>
         </div>
         <div class="div9"> 
-            <button class="red-button">Botón Rojo</button>
+            <button type="button" class="red-button" onclick="vaciar()">Reiniciar</button>
         </div>
-        <div class="div10"> 
-            <input type="text">
+        <div class="div10" id="resultado"> 
+            
         </div>
     </div>
+    
 </body>
+
 </html>

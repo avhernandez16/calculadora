@@ -36,7 +36,7 @@ input{
     font-size: medium;
 }
 
-i{
+button:not(.red-button){
     
     font-size: 30px;
 }
@@ -50,4 +50,3 @@ i{
     border: none;    
     border-radius: 10px;
 }
-
